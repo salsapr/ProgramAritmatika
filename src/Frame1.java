@@ -19,6 +19,14 @@ int jml ;
         initComponents();
             jns = null;
             panel.setVisible(false);
+            bil3.setVisible(false);
+        bil4.setVisible(false);
+        b3.setVisible(false);
+        b4.setVisible(false);
+        bil1.setVisible(false);
+        bil2.setVisible(false);
+        b1.setVisible(false);
+        b2.setVisible(false);
         }
     
 
@@ -35,8 +43,8 @@ int jml ;
         panel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jmlbil = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        b1 = new javax.swing.JLabel();
+        b2 = new javax.swing.JLabel();
         b3 = new javax.swing.JLabel();
         b4 = new javax.swing.JLabel();
         bil1 = new javax.swing.JTextField();
@@ -67,9 +75,9 @@ int jml ;
             }
         });
 
-        jLabel4.setText("Bilangan 1");
+        b1.setText("Bilangan 1");
 
-        jLabel5.setText("Bilangan 2");
+        b2.setText("Bilangan 2");
 
         b3.setText("Bilangan 3");
 
@@ -99,9 +107,9 @@ int jml ;
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
                 .addGap(61, 61, 61)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(b3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(b4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -135,14 +143,14 @@ int jml ;
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(jLabel4))
+                        .addComponent(b1))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(bil1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jLabel5))
+                        .addComponent(b2))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(bil2, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)))
@@ -335,6 +343,10 @@ int jml ;
     
     public void getJumlah(){
         if(jmlbil.getSelectedItem().equals("2")){
+            bil1.setVisible(true);
+        bil2.setVisible(true);
+        b1.setVisible(true);
+        b2.setVisible(true);
         bil3.setVisible(false);
         bil4.setVisible(false);
         b3.setVisible(false);
@@ -342,6 +354,10 @@ int jml ;
         jml = 2;
         }
         else if(jmlbil.getSelectedItem().equals("3")){
+            bil1.setVisible(true);
+        bil2.setVisible(true);
+        b1.setVisible(true);
+        b2.setVisible(true);
         bil3.setVisible(true);
         bil4.setVisible(false);
         b3.setVisible(true);
@@ -349,6 +365,10 @@ int jml ;
         jml = 3;
         }
         else if(jmlbil.getSelectedItem().equals("4")){
+            bil1.setVisible(true);
+        bil2.setVisible(true);
+        b1.setVisible(true);
+        b2.setVisible(true);
         bil3.setVisible(true);
         bil4.setVisible(true);
         b3.setVisible(true);
@@ -392,6 +412,8 @@ int jml ;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel b1;
+    private javax.swing.JLabel b2;
     private javax.swing.JLabel b3;
     private javax.swing.JLabel b4;
     private javax.swing.JTextField bil1;
@@ -403,8 +425,6 @@ int jml ;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox<String> jenis;
     private javax.swing.JComboBox<String> jmlbil;
